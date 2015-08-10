@@ -15,7 +15,7 @@ class dlDataHelper
 	static function getDealData($id, $name, $selector = '*', $output = null, $ordering = null)
 	{
 		$db = JFactory::getDBO();
-		$query = 'SELECT ' . $selector . ' FROM #__deallab_' . $name . ' WHERE deal_id = ' . $id;
+		$query = 'SELECT ' . $selector . ' FROM #__deallab_' . $name . ' WHERE deal_id = ' . $db->q($id);
 		if ($ordering)
 			$query .= ' ORDER BY ' . $ordering . ' ASC';
 		

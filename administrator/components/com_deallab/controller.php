@@ -10,7 +10,7 @@
 // no direct access
 defined('_JEXEC') or die;
 
-class DealLabController extends JController
+class DealLabController extends JControllerLegacy
 {
 	public function display($cachable = false, $urlparams = false)
 	{

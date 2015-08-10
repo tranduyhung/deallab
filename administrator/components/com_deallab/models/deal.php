@@ -61,7 +61,7 @@ class DealLabModelDeal extends JModelAdmin
 		return $item;
 	}
 	
-	protected function prepareTable(&$table)
+	protected function prepareTable($table)
 	{
 		$date = JFactory::getDate();
 		$user = JFactory::getUser();

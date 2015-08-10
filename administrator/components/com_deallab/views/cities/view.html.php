@@ -10,9 +10,7 @@
 // no direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.view');
-
-class DealLabViewCities extends JView
+class DealLabViewCities extends JViewLegacy
 {
     protected $items;
     protected $pagination;

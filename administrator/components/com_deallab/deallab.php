@@ -14,6 +14,7 @@ define('DL_ASSETS', JPATH_BASE . '/media/deallab/assets');
 define('DL_HELPERS', JPATH_COMPONENT_ADMINISTRATOR . '/helpers');
 define('DL_IMG_ROOT', JPATH_ROOT . '/media/deallab/images/');
 define('DL_IMG', JUri::root() . 'media/deallab/images/');
+define('DS', DIRECTORY_SEPARATOR);
 
 require_once (DL_HELPERS . '/html.php');
 
@@ -21,6 +22,6 @@ dlHtmlHelper::addCss(false, true, false, false);
 
 jimport('joomla.application.component.controller');
 
-$controller	= JController::getInstance('DealLab');
+$controller	= JControllerLegacy::getInstance('DealLab');
 $controller->execute(JRequest::getCmd('task'));
 $controller->redirect();
