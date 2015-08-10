@@ -1,0 +1,406 @@
+#deallab-main {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 11px;
+	line-height: 17px;
+}
+#deallab-main,
+#main-deal-block {
+	width: 100%;
+}
+
+h3.main-deal-title {
+	font-size: 18px;
+}
+
+.main-deal-image-block,
+.main-deal-details-block {
+	float: left;
+	position: relative;
+}
+
+.main-deal-image-block {
+	-webkit-border-top-left-radius: 13px;
+	-webkit-border-bottom-left-radius: 13px;
+	-moz-border-radius-topleft: 13px;
+	-moz-border-radius-bottomleft: 13px;
+	border-top-left-radius: 13px;
+	border-bottom-left-radius: 13px;
+	overflow: hidden;
+}
+
+.main-deal-details-block {
+	-webkit-border-bottom-right-radius: 13px;
+	-moz-border-radius-bottomright: 13px;
+	border-bottom-right-radius: 13px;
+	overflow: hidden;
+}
+
+div#main-deal-images {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+div#main-deal-images > img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+span#timeleft {
+	display: block;
+	font-size: 16px;
+	line-height: 25px;
+	margin: 18px 16px 14px;
+	padding-left: 40px;
+}
+
+.savings-value, 
+.savings-discount, 
+.savings-savings {
+	display: inline-block;
+	text-align: center;
+	width: 72px;
+}
+
+div.savings-block {
+	text-align: center;
+	height: 76px;
+}
+
+.savings-block h4 {
+	font-size: 12px;
+	margin: 15px 0 12px;
+	line-height: 20px;
+}
+
+.savings-block span {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+a#main-deal-buy {
+	display: block;
+	font-size: 30px;
+	height: 70px;
+	line-height: 70px;
+	text-decoration: none;
+	position: absolute;
+	bottom: 42px;
+}
+
+a#main-deal-buy-friend {
+	display: block;
+	font-size: 18px;
+	height: 42px;
+	line-height: 42px;
+	text-decoration: none;
+	position: absolute;
+	bottom: 0px;
+}
+
+a#main-deal-buy-friend span {
+	padding-left: 20px;
+}
+
+span.buy_label {
+	float: left;
+	font-weight: bold;
+	margin-left: 20px;
+	text-transform: uppercase;
+}
+
+span.buy_price {
+	float: right;
+	margin-right: 30px;
+	text-align: right;
+}
+
+.description-block {
+	margin-top: 20px;
+}
+
+h4.description-title {
+	margin: 16px 0 5px;
+	padding: 0 0 11px 35px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+
+h4.description-title span {
+	display: block;
+	font-size: 11px;
+	margin-top: -5px;
+	text-transform: none;
+}
+
+
+
+.main-deal-addresses {
+	float: left;
+	width: 230px;
+}
+
+.main-deal-description {
+	float: left;
+	padding-left: 25px;
+}
+
+#deallab-main ul.address_list {
+	list-style: none;
+	margin: 15px 0 0 !important;
+	padding: 0 !important;
+	width: 230px;
+}
+
+#deallab-main ul.address_list li {
+	margin: 0 0 21px 18px !important;
+	padding: 5px !important;
+	position: relative;
+}
+
+ul#options-list {
+	list-style: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+ul#options-list li {
+	position: relative;
+	height: 69px;
+}
+
+ul#options-list li > div {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	height: 69px;
+}
+
+ul#options-list div.option-title {
+	height: 59px;
+	padding-top: 10px;
+	width: 240px;
+}
+
+ul#options-list div.value,
+ul#options-list div.discount,
+ul#options-list div.savings,
+ul#options-list div.bought {
+	width: 85px;
+	text-align: center;	
+}
+
+ul#options-list a.buy-button {
+	display: block;
+	width: 200px;
+	height: 70px;
+	line-height: 70px;
+	color: #fff;
+	position: absolute;
+	right: -15px;
+	top: 0px;
+	background: #000;
+}
+
+ul#options-list h5 {
+	font-size: 12px;
+}
+
+ul#options-list span {
+	font-size: 18px;
+}
+
+ul#options-list a.buy-button span.title {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-left: 10px;
+	font-size: 30px;
+}
+
+ul#options-list a.buy-button span.dl-price {
+	float: right;
+	margin-right: 10px;
+	font-size: 30px;
+}
+
+span.address-number {
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	text-align: center;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+}
+
+span.address-title {
+	display: inline-block;
+	font-size: 11px;
+	margin: 5px 0 10px;
+}
+
+div.full-description {
+	padding-right: 25px;
+}
+
+a#deal-contact, a#deal-contact:hover {
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: 37px;
+	line-height: 37px;
+	margin-bottom: 10px;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+
+h3.title-block {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+	margin: 0px;
+	padding: 16px 15px 14px;
+	text-transform: uppercase;
+}
+
+#deallab-checkout .inner {
+	padding: 14px 17px;
+}
+
+.order-details label {
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 19px;
+}
+
+#deallab-checkout .block {
+	float: left;
+}
+
+#deallab-checkout .account-details label {
+	display: block;
+	float: left;
+	line-height: 27px;
+	width: 100px;
+}
+
+#deallab-checkout .account-details .inputbox {
+	float: left;
+	margin-bottom: 13px;
+}
+
+#deallab-checkout .inputbox {
+	font-size: 14px;
+	height: 23px;
+	padding: 2px 5px;
+}
+
+#deallab-checkout #amount {
+	font-weight: bold;
+	text-align: center;
+	width: 52px;
+}
+
+.countdown_section {
+	display: inline-block;
+}
+
+.clr, .clearfix {
+	clear: both;
+}
+
+#deallab-checkout label.error {
+	margin: 0 0 5px 100px;
+	font-size: 10px;
+	line-height: 12px;
+	float: none !important;
+	width: auto !important;
+	display: none;
+}
+#buyModal h3 {margin: 10px 0 7px !important;}
+#buyModal .modal-body {
+	padding-top: 2px;
+	padding-bottom: 0;
+}
+input.buy-button {
+	border: none !important;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 11px 25px 9px !important;
+	color: #fff;
+}
+
+input#rules_agree {margin-top: -3px;}
+
+#termsModal .modal-body {
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+#termsModal .controls {
+	text-align: right;
+	margin: 10px 30px 15px 0;
+}
+
+.social-icon {float: right; margin-bottom: 10px; width: 75px;}
+
+div.my-order {border-bottom: 1px dashed #ccc; padding: 10px;}
+div.my-order h3 {margin: 0px !important; line-height: 20px;}
+div.my-order h4 {font-size: 18px;}
+div.my-order h4 span {font-weight: normal;}
+div.my-order span.order-number {float: left; font-weight: bold;}
+div.my-order span.order-date {float: right;}
+div.my-order .coupons-list {margin-top: 10px; font-size: 14px;}
+
+#deallab-main div.dealon {
+	color: #fff !important;
+	text-align: center;
+	font-size: 18px;
+	margin: 50px 0;
+}
+
+#deallab-main .deal-progress {
+	margin-top: 50px;
+	padding: 0 30px;
+}
+
+#deallab-main .deal-progress span {
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#deallab-main .progress-bg {
+	width: 100%;
+	height: 4px;
+	background: #ccc;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#deallab-main .progress_inner {
+	height: 4px;
+	width: 0px;
+	background: #E75B11;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}

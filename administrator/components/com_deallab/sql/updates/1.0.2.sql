@@ -1,0 +1,14 @@
+ALTER TABLE `#__deallab_customfields` ADD COLUMN `ordering` int(11) NOT NULL after `value`;
+ALTER TABLE `#__deallab_deal_categories` ADD PRIMARY KEY(`deal_id`,`category_id`);
+ALTER TABLE `#__deallab_deals` CHANGE COLUMN `publish_up` `publish_up` datetime NOT NULL after `ordering`;
+ALTER TABLE `#__deallab_deals` CHANGE COLUMN `publish_down` `publish_down` datetime NOT NULL after `publish_up`;
+ALTER TABLE `#__deallab_deals` CHANGE COLUMN `cpn_valid_from` `cpn_valid_from` datetime NOT NULL after `publish_down`;
+ALTER TABLE `#__deallab_deals` CHANGE COLUMN `cpn_valid_till` `cpn_valid_till` datetime NOT NULL after `cpn_valid_from`;
+ALTER TABLE `#__deallab_deals` CHANGE COLUMN `checked_out` `checked_out` int(11) NOT NULL after `cpn_valid_till`;
+ALTER TABLE `#__deallab_deals` CHANGE COLUMN `checked_out_time` `checked_out_time` datetime NOT NULL after `checked_out`;
+ALTER TABLE `#__deallab_deals` ADD COLUMN `options` text NOT NULL after `merchant_email`;
+ALTER TABLE `#__deallab_deals` CHANGE COLUMN `state` `state` tinyint(1) NOT NULL DEFAULT '0' after `options`;
+ALTER TABLE `#__deallab_deals` DROP COLUMN `params`;
+ALTER TABLE `#__deallab_orders` ADD COLUMN `gateway` varchar(64) NOT NULL after `status`;
+ALTER TABLE `#__deallab_orders` CHANGE COLUMN `cdate` `cdate` datetime NOT NULL after `gateway`;
+ALTER TABLE `#__deallab_orders` ADD COLUMN `mail_sent` tinyint(1) NOT NULL DEFAULT '0' after `gateway`;

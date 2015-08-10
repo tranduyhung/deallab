@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS `#__deallab_addresses`;
+DROP TABLE IF EXISTS `#__deallab_callbacks`;
+DROP TABLE IF EXISTS `#__deallab_categories`;
+DROP TABLE IF EXISTS `#__deallab_cities`;
+DROP TABLE IF EXISTS `#__deallab_coupons`;
+DROP TABLE IF EXISTS `#__deallab_customfields`;
+DROP TABLE IF EXISTS `#__deallab_deal_categories`;
+DROP TABLE IF EXISTS `#__deallab_deal_cities`;
+DROP TABLE IF EXISTS `#__deallab_deals`;
+DROP TABLE IF EXISTS `#__deallab_images`;
+DROP TABLE IF EXISTS `#__deallab_orders`;
+DROP TABLE IF EXISTS `#__deallab_prices`;

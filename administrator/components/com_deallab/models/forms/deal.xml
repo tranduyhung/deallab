@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="deal-info" label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+		<field name="title" type="text" class="inputbox"
+			size="40" label="DEALLAB_LABEL_TITLE"
+			description="DEALLAB_LABEL_TITLE_DESC" required="true" />
+			
+		<field name="alias" type="text" class="inputbox"
+			size="40" label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC" />
+			
+	</fieldset>
+	
+	<fieldset name="merchant-info" label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+		<field name="merchant_title" type="text" class="inputbox"
+			size="40" label="DEALLAB_MERCHANT_TITLE"
+			description="DEALLAB_MERCHANT_TITLE_DESC" />
+			
+		<field name="merchant_email" type="text" class="inputbox"
+			size="40" label="DEALLAB_MERCHANT_EMAIL"
+			description="DEALLAB_MERCHANT_EMAIL_DESC" />
+			
+	</fieldset>
+	
+	<fieldset addfieldpath="/administrator/components/com_categories/models/fields">
+		<field name="description" type="editor" buttons="true" hide="pagebreak,readmore"
+			class="inputbox"
+			filter="JComponentHelper::filterText"
+			label="JGLOBAL_DESCRIPTION" description="DEALLAB_FIELD_DESCRIPTION_DESC" />
+			
+		<field name="min_coupons" type="text"
+			label="DEALLAB_LABEL_MIN_COUPONS" description="DEALLAB_LABEL_MIN_COUPONS_DESC"
+			class="inputbox" size="5" />
+			
+		<field id="use_shipping" name="use_shipping" type="radio"
+			class="inputbox" label="DEALLAB_LABEL_USE_SHIPPING"
+			description=""
+		>
+			<option value="0" onclick="toggleShipping(0);">No</option>
+			<option value="1" onclick="toggleShipping(1);">Yes</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="publishing-details" label="JGLOBAL_FIELDSET_PUBLISHING">
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			description="DEALLAB_FIELD_STATE_DESC"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option
+				value="1">JPUBLISHED</option>
+			<option
+				value="0">JUNPUBLISHED</option>
+			<option
+				value="2">JARCHIVED</option>			
+			<option
+				value="-2">JTRASHED</option>
+		</field>
+		
+		<field name="publish_up" type="calendar"
+			label="DEALLAB_LABEL_DEAL_VALID_FROM" description="DEALLAB_LABEL_DEAL_VALID_FROM_DESC"
+			class="inputbox" format="%Y-%m-%d" size="16" required="true" />
+
+		<field name="publish_down" type="calendar"
+			label="DEALLAB_LABEL_DEAL_VALID_TILL" description="DEALLAB_LABEL_DEAL_VALID_TILL_DESC"
+			class="inputbox" format="%Y-%m-%d" size="16" required="true" />
+			
+		<field name="cpn_valid_from" type="calendar"
+			label="DEALLAB_LABEL_COUPON_VALID_FROM" description="DEALLAB_LABEL_COUPON_VALID_FROM_DESC"
+			class="inputbox" format="%Y-%m-%d" size="16" />
+
+		<field name="cpn_valid_till" type="calendar"
+			label="DEALLAB_LABEL_COUPON_VALID_TILL" description="DEALLAB_LABEL_COUPON_VALID_TILL_DESC"
+			class="inputbox" format="%Y-%m-%d" size="16" />
+			
+		<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+			readonly="true" class="readonly"
+			description="JGLOBAL_FIELD_ID_DESC"/>
+	</fieldset>
+	<fields name="options">
+		<fieldset name="deal-options" label="Additional options">
+			<field name="fb_comment" type="checkbox"
+				label="DEALLAB_LABEL_FB_COMMENT" description="DEALLAB_LABEL_FB_COMMENT_DESC"
+				class="inputbox" value="1" />
+			<field name="fb_like" type="checkbox"
+				label="DEALLAB_LABEL_FB_LIKE" description="DEALLAB_LABEL_FB_LIKE_DESC"
+				class="inputbox" value="1" />
+			<field name="g_plus" type="checkbox"
+				label="DEALLAB_LABEL_G_PLUS" description="DEALLAB_LABEL_G_PLUS_DESC"
+				class="inputbox" value="1" />
+			<field name="friend_buy" type="checkbox"
+				label="DEALLAB_LABEL_FIEND_BUY" description="DEALLAB_LABEL_FIEND_BUY_DESC"
+				class="inputbox" value="1" />
+			<field
+				name="show_discounts" type="list" class="inputbox" size="1" default="0" 
+				label="DEALLAB_LABEL_SHOW_DISCOUNTS"
+				description="DEALLAB_LABEL_SHOW_DISCOUNTS_DESC">
+					<option value="0">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="-1">JNO</option>			
+			</field>
+		</fieldset>
+	</fields>
+	<fields name="shipping">
+		<fieldset name="deal-shipping" label="Shipping details">
+			<field
+				name="price_type"
+				type="list"
+				label="DEALLAB_LABEL_PRICE_TYPE"
+				description="DEALLAB_LABEL_PRICE_TYPE_DESC"
+				class="inputbox"
+				size="1"
+				default="1">
+					<option value="1">DEALLAB_LABEL_FLAT_SHIPPING_PRICE</option>
+					<option value="2">DEALLAB_LABEL_PRICE_PER_COUPON</option>			
+			</field>
+			
+			<field name="shipping_price" type="text" class="inputbox"
+				size="5" label="DEALLAB_LABEL_SHIPPING_PRICE"
+				description="DEALLAB_LABEL_SHIPPING_PRICE" />
+				
+			<field name="on_delivery" type="checkbox" class="inputbox"
+				size="5" label="DEALLAB_LABEL_CASH_ON_DELIVERY" value="1" />
+				
+			<field type="spacer" name="required-fields" label="Required fields:" />
+		
+			<field name="customer_name" type="checkbox"
+				label="DEALLAB_LABEL_NAME" description="" 
+				class="inputbox" value="1" />
+			
+			<field name="customer_phone" type="checkbox"
+				label="DEALLAB_LABEL_PHONE" description="" 
+				class="inputbox" value="1" />
+			
+			<field name="customer_address" type="checkbox"
+				label="DEALLAB_LABEL_ADDRESS" description="" 
+				class="inputbox" value="1" />
+				
+			<field name="customer_city" type="checkbox"
+				label="DEALLAB_LABEL_CITY" description="" 
+				class="inputbox" value="1" />
+			
+			<field name="customer_zip" type="checkbox"
+				label="DEALLAB_LABEL_ZIP" description="" 
+				class="inputbox" value="1" />
+			
+		</fieldset>
+	</fields>
+	<fields name="images">
+		<fieldset name="jimages" label="COM_WEBLINKS_FIELDSET_OPTIONS"></fieldset>
+	</fields>
+	<fields name="metadata">
+		<fieldset name="jmetadata" label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+					
+		<field name="metakey" type="textarea"
+			label="JFIELD_META_KEYWORDS_LABEL" description="JFIELD_META_KEYWORDS_DESC"
+			class="inputbox" rows="3" cols="30" />
+
+		<field name="metadesc" type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC"
+			class="inputbox" rows="3" cols="30" />
+
+		</fieldset>
+	</fields>
+</form>

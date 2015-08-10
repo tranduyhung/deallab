@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="general"
+		description="DEALLAB_FIELDSET_CONFIG_GENERAL_DESC"
+		label="DEALLAB_FIELDSET_CONFIG_GENERAL"
+	>
+		<field name="show_discounts" type="radio"
+			default="1"
+			label="DEALLAB_LABEL_SHOW_DISCOUNTS"
+			description="DEALLAB_LABEL_SHOW_DISCOUNTS_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+		<field name="load_jquery" type="radio"
+			default="1"
+			label="DEALLAB_LABEL_LOAD_JQUERY" >
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+		<field name="no_conflict" type="radio"
+			default="1"
+			label="DEALLAB_LABEL_JQUERY_NOCONFLICT" >
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+		<field name="load_bootstrap" type="radio"
+			default="1"
+			label="DEALLAB_LABEL_LOAD_BOOTSTRAP" >
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+		<field name="load_jqueryui" type="radio"
+			default="1"
+			label="DEALLAB_LABEL_LOAD_JQUERYUI" >
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+	</fieldset>
+	<fieldset name="currencies"
+		description="DEALLAB_FIELDSET_CONFIG_CURRENCY_DESC"
+		label="DEALLAB_FIELDSET_CONFIG_CURRENCY"
+	>
+		<field name="currency_symbol" type="text" class="inputbox"			
+			label="DEALLAB_LABEL_CURRENCY_SYMBOL"
+			description="DEALLAB_LABEL_CURRENCY_SYMBOL_DESC"
+		/>
+		
+		<field name="currency_code" type="text" class="inputbox"			
+			label="DEALLAB_LABEL_CURRENCY_CODE"
+			description="DEALLAB_LABEL_CURRENCY_CODE_DESC"
+		/>
+				
+		<field name="currency_position" type="list"
+			default="1"
+			label="DEALLAB_LABEL_CURRENCY_SYMBOL_POSITION"
+			description="DEALLAB_LABEL_CURRENCY_SYMBOL_POSITION_DESC"
+		>
+			<option value="0">DEALLAB_LABEL_CURRENCY_BEFORE</option>
+			<option value="1">DEALLAB_LABEL_CURRENCY_AFTER</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="thirds"
+		description=""
+		label="Third party"
+	>
+		<field name="fb_api_key" type="text" class="inputbox"
+			default=""			
+			label="DEALLAB_LABEL_FACEBOOK_API_KEY"
+			description="DEALLAB_LABEL_FACEBOOK_API_KEY_DESC"
+		/>
+		
+		<field name="maps_key" type="text" class="inputbox"			
+			label="DEALLAB_LABEL_MAPS_API_KEY"
+			description="DEALLAB_LABEL_MAPS_API_KEY_DESC"
+		/>
+		
+		<field name="paypal_username" type="text" class="inputbox"
+			default=""			
+			label="DEALLAB_LABEL_PAYPAL_USERNAME"
+			description="DEALLAB_LABEL_PAYPAL_USERNAME_DESC"
+		/>
+		
+		<field name="paypal_sandbox" type="radio"
+			default="0"
+			label="DEALLAB_LABEL_PAYPAL_SANDBOX"
+			description="DEALLAB_LABEL_PAYPAL_SANDBOX_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+	</fieldset>
+	
+	<fieldset name="images"
+		description="DEALLAB_FIELDSET_CONFIG_IMAGES_DESC"
+		label="DEALLAB_FIELDSET_CONFIG_IMAGES"
+	>		
+		<field name="thumb_w" type="text" class="inputbox"
+			label="DEALLAB_IMG_THUMB_WIDTH"
+			default="90"
+		/>
+		<field name="thumb_h" type="text" class="inputbox"
+			label="DEALLAB_IMG_THUMB_HEIGHT"
+			default="90"
+		/>
+		<field type="spacer" name="imgspacer1" hr="true" />
+		<field name="small_w" type="text" class="inputbox"
+			label="DEALLAB_IMG_SMALL_WIDTH"
+			default="120"
+		/>
+		<field name="small_h" type="text" class="inputbox"
+			label="DEALLAB_IMG_SMALL_HEIGHT"
+			default="120"
+		/>
+		<field type="spacer" name="imgspacer2" hr="true" />
+		<field name="medium_w" type="text" class="inputbox"
+			label="DEALLAB_IMG_MEDIUM_WIDTH"
+			default="250"
+		/>
+		<field name="medium_h" type="text" class="inputbox"
+			label="DEALLAB_IMG_MEDIUM_HEIGHT"
+			default="250"
+		/>
+		<field type="spacer" name="imgspacer3" hr="true" />
+		<field name="large_w" type="text" class="inputbox"
+			label="DEALLAB_IMG_LARGE_WIDTH"
+			default="426"
+		/>
+		<field name="large_h" type="text" class="inputbox"
+			label="DEALLAB_IMG_LARGE_HEIGHT"
+			default="359"
+		/>
+		
+	</fieldset>
+	<fieldset name="themes"
+		description="DEALLAB_FIELDSET_CONFIG_THEMES_DESC"
+		label="DEALLAB_FIELDSET_CONFIG_THEMES"
+	>
+		<field name="tpl_width" type="text" class="inputbox"
+			label="DEALLAB_LABEL_TPL_WIDTH"
+			description="DDEALLAB_LABEL_TPL_WIDTH_DESC"
+			default="700"
+		/>
+		
+		<field name="color_preset" type="list"
+			default="blue"
+			label="DEALLAB_LABEL_COLOR_SCHEME"
+		>
+			<option value="blue">DEALLAB_COLOR_BLUE</option>
+		</field>
+		
+		<field name="load_main_css" type="radio"
+			default="1"
+			label="DEALLAB_LABEL_LOAD_MAIN_CSS" >
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+		<field name="load_tpl_css" type="radio"
+			default="1"
+			label="DEALLAB_LABEL_LOAD_TPL_CSS" >
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	<fieldset name="terms"
+		description="DEALLAB_FIELDSET_CONFIG_TERMS_DESC"
+		label="DEALLAB_FIELDSET_CONFIG_TERMS"
+	>
+		<field name="show_tems" type="radio"
+			default="0"
+			label="DEALLAB_LABEL_SHOW_TERMS"
+			description="DEALLAB_LABEL_SHOW_TERMS_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+		<field name="must_agree" type="radio"
+			default="0"
+			label="DEALLAB_LABEL_MUST_AGREE"
+			description="DEALLAB_LABEL_MUST_AGREE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+		<field type="spacer" name="DEALLAB_FIELDSET_CONFIG_TERMS" hr="false" />
+		
+		<field name="terms" type="editor"
+			filter="safehtml" width="660"
+		/>
+	</fieldset>
+</config>

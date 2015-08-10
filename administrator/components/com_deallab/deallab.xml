@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_DEALLAB</name>
+	<author>Studio4</author>
+	<creationDate>November 2012</creationDate>
+	<authorEmail>info@studio4.lt</authorEmail>
+	<authorUrl>www.studio4.lt</authorUrl>	
+	<copyright>Copyright (c) 2010 - 2013 UAB Studio4. All rights reserved.</copyright>
+	<license>GNU/GPL license: <![CDATA[http://shop.studio4.lt/deallab-license]]></license>
+	<version>1.0.6</version>
+	<description></description>
+    <scriptfile>script.deallab.php</scriptfile>
+    <install>
+        <sql>
+            <file driver="mysqli" charset="utf8">sql/install.mysql.sql</file>
+            <file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysqli" charset="utf8">sql/uninstall.mysql.sql</file>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+        </sql>
+    </uninstall>
+    <update>
+		<schemas>
+			<schemapath type="mysqli">sql/updates</schemapath>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+    <updateservers>
+        <server type="extension" priority="1" name="Deal Lab Updates"><![CDATA[http://updates.studio4.lt/deallab/com_deallab.xml]]></server>
+    </updateservers>
+    <files folder="components/com_deallab">
+    	<folder>controllers</folder>
+	 	<folder>models</folder>
+	 	<folder>tpl</folder>
+		<folder>views</folder>                
+	 	<filename>controller.php</filename>
+		<filename>deallab.php</filename>		
+		<filename>index.html</filename>
+		<filename>metadata.xml</filename>
+		<filename>router.php</filename>
+    </files>
+    <media destination="deallab" folder="media/deallab">
+        <folder>assets</folder>
+        <folder>images</folder>
+    </media>
+    <languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.com_deallab.ini</language>
+		<language tag="en-GB">en-GB.com_deallab.sys.ini</language>
+		<language tag="en-GB">en-GB.mod_deallab_categories.ini</language>
+		<language tag="en-GB">en-GB.mod_deallab_cities.ini</language>
+		<language tag="en-GB">en-GB.mod_deallab_deals.ini</language>
+		<language tag="en-GB">en-GB.plg_deallab_paypal.ini</language>
+		<language tag="en-GB">en-GB.plg_deallab_paypal.sys.ini</language>
+    </languages>
+    <administration>
+        <menu img="../media/deallab/assets/icons/system/deallab_16x16.png" view="deals" link="option=com_deallab&amp;view=deals">DEALLAB_MENU</menu>
+        <submenu>
+        	<menu view="deals" link="option=com_deallab&amp;view=deals">DEALLAB_MENU_DEALS</menu>
+			<menu view="cities" link="option=com_deallab&amp;view=cities">DEALLAB_MENU_CITIES</menu>
+			<menu view="categories" link="option=com_deallab&amp;view=categories">DEALLAB_MENU_CATEGORIES</menu>			
+			<menu view="orders" link="option=com_deallab&amp;view=orders">DEALLAB_MENU_ORDERS</menu>
+			<menu view="coupons" link="option=com_deallab&amp;view=coupons">DEALLAB_MENU_COUPONS</menu>
+        </submenu>
+        <files folder="administrator/components/com_deallab">
+        	<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>			
+			<folder>views</folder>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>deallab.php</filename>
+			<filename>index.html</filename>	
+        </files>
+        <languages folder="administrator/language/en-GB">
+            <language tag="en-GB">en-GB.com_deallab.ini</language>
+            <language tag="en-GB">en-GB.com_deallab.sys.ini</language>
+            <language tag="en-GB">en-GB.mod_deallab_categories.ini</language>
+            <language tag="en-GB">en-GB.mod_deallab_cities.ini</language>
+            <language tag="en-GB">en-GB.mod_deallab_deals.ini</language>
+	        <language tag="en-GB">en-GB.plg_deallab_paypal.ini</language>
+    	    <language tag="en-GB">en-GB.plg_deallab_paypal.sys.ini</language>
+        </languages>
+    </administration>
+    <config>
+        <fields>
+            <fieldset>
+            	<field name="fb_api_key" default="1" />
+                <field name="maps_key" default="1" />
+                <field name="paypal_username" default="" />
+                <field name="paypal_sandbox" default="0" />
+                <field name="currency_symbol" default="$" />
+                <field name="currency_code" default="USD" />
+                <field name="currency_position" default="1" />
+                <field name="thumb_w" default="90" />
+                <field name="thumb_h" default="90" />
+                <field name="small_w" default="90" />
+                <field name="small_h" default="96" />
+                <field name="medium_w" default="200" />
+                <field name="medium_h" default="200" />
+                <field name="large_w" default="426" />
+                <field name="large_h" default="359" />
+                <field name="tpl_width" default="727" />
+                <field name="color-preset" default="blue" />
+                <field name="show_tems" default="0" />
+                <field name="must_agree" default="0" />
+                <field name="terms" default="" />
+            </fieldset>
+        </fields>
+    </config>
+    <modules>
+        <module module="mod_deallab_categories" client="site" />
+        <module module="mod_deallab_cities" client="site" />
+        <module module="mod_deallab_deals" client="site" />
+    </modules>
+    <plugins>
+    	<plugin plugin="deallab" group="system" />
+        <plugin plugin="paypal" group="deallab" />
+    </plugins>
+</extension>

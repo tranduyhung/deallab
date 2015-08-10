@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_DEALLAB_VIEW_FRONTPAGE_TITLE">
+		<message>
+			<![CDATA[COM_DEALLAB_VIEW_FRONTPAGE_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="deallab_deallab_order_by"
+				type="list"
+				label="COM_DEALLAB_FIELD_ORDERING"
+				description="COM_DEALLAB_FIELD_ORDERING_DESC"
+				default="ordering"
+			>
+				<option value="ordering">Ordering</option>
+				<option value="created">Latest first</option>
+			</field>
+			<field
+				name="deallab_deallab_order_dir"
+				type="list"
+				label="COM_DEALLAB_FIELD_ORDERING_DIR"
+				description="COM_DEALLAB_FIELD_ORDERING_DIR_DESC"
+				default="ASC"
+			>
+				<option value="ASC">Ascending</option>
+				<option value="DESC">Descending</option>
+			</field>
+        </fieldset>
+	</fields>
+</metadata>

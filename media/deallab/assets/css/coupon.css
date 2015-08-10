@@ -1,0 +1,36 @@
+#deallab-coupon {
+	border: 1px dashed #ccc;
+	width: 600px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+#deallab-coupon h1 {
+	text-align: center;
+	border-bottom: none !important;
+	font-size: 36px !important;
+}
+
+#deallab-coupon h2 {
+	text-align: center;
+	font-size: 24px;
+	margin: 10px 0 15px !important;
+}
+
+#deallab-coupon > .col1,
+#deallab-coupon > .col2 {
+	float: right;
+	width: 280px;
+	margin-bottom: 30px;
+}
+
+#deallab-coupon > .col1 {
+	float: left;
+	width: 280px;
+	padding-right: 20px;
+	border-right: 1px solid #ddd;
+}
+
+.clearfix {
+	clear: both;
+}

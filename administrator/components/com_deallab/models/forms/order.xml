@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_deallab/models/fields">
+        <field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="deal_title" type="text" label="DEALLAB_LABEL_DEAL"
+        	readonly="true" class="readonly"
+            description="" />
+
+        <field name="option_title" type="text" label="DEALLAB_LABEL_OPTION"
+        	readonly="true" class="readonly"
+            description="" />
+            
+		<field name="amount" type="text" label="DEALLAB_LABEL_ORDER_AMOUNT"
+        	readonly="true" class="readonly"
+            description="" />
+        
+        <field name="shipping" type="text" label="DEALLAB_LABEL_SHIPPING_PRICE"
+        	readonly="true" class="readonly"
+            description="" />
+              
+        <field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            description=""
+            class="readonly"
+            readonly="true"
+            default="0">
+            <option
+                value="1">DEALLAB_CONFIRMED</option>
+            <option
+                value="0">DEALLAB_PENDING</option>
+        </field>
+    </fieldset>
+</form>

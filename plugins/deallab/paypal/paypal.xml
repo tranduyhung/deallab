@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="deallab">
+	<name>plg_deallab_paypal</name>
+	<author>Studio4</author>
+	<creationDate>October 2012</creationDate>
+	<copyright></copyright>
+	<license></license>
+	<authorEmail>info@studio4.lt</authorEmail>
+	<authorUrl>www.studio4.lt</authorUrl>
+	<version>1.0</version>
+	<description>PayPal payment plugin for DealLab.</description>
+	<files>
+		<filename plugin="paypal">paypal.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

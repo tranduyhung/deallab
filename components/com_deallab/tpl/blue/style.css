@@ -1,0 +1,32 @@
+.color1 {color: #E75B11 !important;}
+.color4 {color: #D7DF23 !important;}
+.color6 {color: #404040 !important;}
+#deallab-main h5, .order-details label, .color7 {color: #7D7D7D !important;}
+.color8 {color: #003a5c !important;}
+#main-deal-block {color: #ffffff;}
+div.main-deal-details-block {background-color: #003A5C;}
+.description-block {background-color: #F4F4F4;}
+a#main-deal-buy {color: #ffffff;}
+a#main-deal-buy-friend {color: #ffffff;}
+div.countdown-block, div.savings-block {border-bottom: 1px solid #00263D; color: #ffffff;}
+#deallab-main h4.description-title {border-bottom: 1px dotted #BBBBBB;}
+h4.description-title span {color: #999;}
+ul.address_list li {background: #ffffff;}
+span.address-number {background: url("bg_addr_no.png") no-repeat scroll 0 0 transparent;}
+a#deal-contact {background: linear-gradient(to bottom, #DEDEDE 0%, #C9C9C9 100%) repeat scroll 0 0 transparent;}
+h3.title-block {background: #f4f4f4; color: #404040;}
+span#timeleft {background: url('icon_timeleft.png') no-repeat left center;}
+a#main-deal-buy, ul#options-list a.buy-button {background: url('button_maindeal_buy.png') repeat-x 0 0;}
+a#main-deal-buy:hover, ul#options-list a.buy-button:hover {background: url('button_maindeal_buy.png') repeat-x 0 -70px !important; text-decoration: none;}
+a#main-deal-buy-friend {background: url('bg_maindeal_friend.png') repeat-x 0 0;}
+a#main-deal-buy-friend:hover {background: url('bg_maindeal_friend.png') repeat-x 0 -42px !important;}
+#deallab-main h4.location-title {background: url('icon_location.png') no-repeat 15px 2px;}
+#deallab-main h4.desc-title {background: url('icon_description.png') no-repeat 15px 2px;}
+ul#options-list div.bought {color: #7d7d7d;}
+ul#options-list li {border-bottom: 1px solid #dfdfdf;}
+ul#options-list div.option-title,
+ul#options-list div.savings {border-right: 1px solid #dfdfdf;}
+input.buy-button {background: linear-gradient(to bottom, #F17E41 0%, #E75C12 100%) repeat scroll 0 0 transparent;}
+div.deallab-categories, div.deallab-cities {display: inline-block;}
+div.deallab-categories a, div.deallab-cities a {padding: 5px 10px;}
+div.deallab-categories .nav > li > a:hover, div.deallab-cities .nav > li > a:hover {color: #E75B11; background: none !important;}
